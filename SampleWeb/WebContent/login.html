@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="ISO-8859-1">
+<title>SignUp/Login</title>
+<link rel="stylesheet" href="log.css">
+<link rel="stylesheet" href="template.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.nav-bar li a{
+	color: #fff;
+	padding: 15px 75px;
+	text-decoration: none;
+	font-size: 17px;
+}</style>
+<body style="background-image: url('images/logbg.jfif'); background-size: cover;">
+<div>
+		<div class="main"><img class="banner" src="images/VISHAL MOTORS logo.png" /></div>
+		<div class="nav-bar"><nav><ul>
+			<li><a href="index.html"">Home</a></li>
+			<li><a href="vehicles.jsp">Vehicles</a></li>
+			<li><a href="book.html">Booking</a></li>
+			<li><a href="service.jsp">Service</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="login.html" style="background-color: #05156E;">Login</a>
+		</ul></nav></div>
+	</div>
+<div class="container2">
+	<div class="box">
+		<form action="loginj.jsp" method="post">
+			<div class="split left">
+				<p style="font-size:40px; text-shadow: 2px 2px #1F85DE;"><b>Login</b></p><br><br>
+				<label for="name1"><b>Username</b></label><br>
+				<input type="text" placeholder="Enter Username" name="name1" required><br>
+				<label for="pass"><b>Password</b></label><br>
+				<input type="password" placeholder="Enter Password" name="pass1" required><br><br>
+				<button type="submit" class="button">Login</button><br><br>
+			</div>
+		</form>
+		<form action="signup.jsp" method="post">
+			<div class="split right">
+				<p style="font-size:40px; text-shadow: 2px 2px #001B61;"><b>Sign up</b></p><br><br>
+				<label for="name2"><b>Username</b></label><br>
+				<input type="text" placeholder="Enter Username" name="name2" required><br>
+				<label for="mail"><b>Email address</b></label><br>
+				<input type="text" placeholder="Enter Email" name="mail" required><br>
+				<label for="pass2"><b>Password</b></label><br>
+				<input type="password" placeholder="Enter Password" name="pass2" required><br>
+				<label for="pass3"><b>Confirm Password</b></label><br>
+				<input type="password" placeholder="Repeat Password" name="pass3" required><br><br>
+				<label><input type="checkbox" checked="checked" name="terms" required>Allow admin to access information</label><br><br>
+				<button type="submit" class="button" style="border: 3px solid white">Sign up</button>
+				<button type="button" class="button" style="border: 3px solid white" name="cancel" onclick="location.reload()">Cancel</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

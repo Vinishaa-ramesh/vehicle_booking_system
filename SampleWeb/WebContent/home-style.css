@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+.new{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+.arrival{
+	width: 98%;
+	height: auto;
+}
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+	width: auto;
+	height: auto;
+	border-radius: 20px;
+	position: relative;
+	top: 10px;
+	left: 50px;
+	border-radius: 10px;
+	margin-right: 30px;
+}
+.brand{
+	max-height: 100px;
+	height: auto;
+	width: 10%;
+	border-radius: 10px;
+	margin-bottom: 0;
+}
+.brand:hover{
+	border-style: solid;
+}
+.sh{
+	color: #0043DF;
+	font-size: 25px;
+	text-decoration: underline overline;
+	margin-left: 20px;
+}
+.search{
+	display: inline;
+}
+.search input[type=text] {
+  float: right;
+  padding: 6px;
+  border: 1px solid #e0e0e0;
+  margin-top: 16px;
+  margin-right: 55px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+.search input[type=text] .btn{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .search input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.btn{
+  float: right;
+  padding: 10px 10px;
+  margin-top: -32px;
+  margin-right: 16px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  border-radius: 15px;
+}
+.btn:hover {
+  background: #ccc;
+}

@@ -1,0 +1,95 @@
+@charset "ISO-8859-1";
+.card{
+	width: 40%;
+	height: 40px;
+	padding: 30px;
+}
+.card{
+	height: auto;
+	border-radius: 20px;
+	position: relative;
+	top: 60px;
+	left: 50px;
+	border-radius: 10px;
+	margin-right: 30px;
+	display: block;
+	float: left;
+	border: 2px solid #ccc;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.description{
+	background-color: #32A3FF;
+	color: #fff;
+}
+.description:hover{
+	background-color: #05156E;
+}
+.bar{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	float: left;
+}
+.card img{
+	height: 100px;
+	width: 100px;
+}
+.search{
+	display: inline;
+}
+.search input[type=text] {
+  float: right;
+  padding: 6px;
+  border: 1px solid #e0e0e0;
+  margin-top: 16px;
+  margin-right: 55px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+.search input[type=text] .btn{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .search input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.btn{
+  float: right;
+  padding: 10px 10px;
+  margin-top: 25px;
+  margin-right: 16px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  border-radius: 15px;
+}
+.btn:hover {
+  background: #ccc;
+}
+.model{
+	color: #05156E;
+	font-size: 20px;
+	border: 0px;
+}
+.desc{
+	color: #32A3FF;
+	font-size: 15px;
+}
+.d{
+	color: black;
+}
+.r{
+	color: red;
+	font-size: 20px;
+	background-color: #yellow;
+}
