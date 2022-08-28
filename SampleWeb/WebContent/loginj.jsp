@@ -14,7 +14,7 @@
 	String password=request.getParameter("pass1");
 	String connectionUrl="jdbc:mysql://localhost:3306/project";
     Class.forName("com.mysql.jdbc.Driver");
-	java.sql.Connection con=DriverManager.getConnection(connectionUrl,"root","Omkr786#");
+	java.sql.Connection con=DriverManager.getConnection(connectionUrl,"root","password");
 	Statement st= con.createStatement();
 	ResultSet rs=st.executeQuery("select * from userdetails where username='"+user+"'");
 	if(rs.next())
