@@ -26,7 +26,7 @@
 	<%try{
 		String vehicle=request.getParameter("vehicle");
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","Omkr786#");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","password");
 		Statement stmt=con.createStatement();
 		ResultSet rs=stmt.executeQuery("select * from products where name='"+vehicle+"'");
 		while(rs.next()){ %>
