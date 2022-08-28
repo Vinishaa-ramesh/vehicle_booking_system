@@ -32,7 +32,7 @@ if(window.history.forward(1)!=null)
 		String connectionUrl="jdbc:mysql://localhost:3306/project";
 		Connection connection=null;
 		Class.forName("com.mysql.jdbc.Driver");
-		connection=DriverManager.getConnection(connectionUrl,"root","Omkr786#");
+		connection=DriverManager.getConnection(connectionUrl,"root","password");
 	Statement st=connection.createStatement();
 	ResultSet rs1=st.executeQuery("select cost from products where name='"+model+"'");
 	Random number= new Random();
