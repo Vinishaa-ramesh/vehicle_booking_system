@@ -30,7 +30,7 @@
 	<%try{
 		String brand=request.getParameter("brand");
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","Omkr786#");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","password");
 		Statement stmt=con.createStatement();
 		ResultSet rs=stmt.executeQuery("select * from products where brand='"+brand+"'");
 		%><h2 style="color: red; margin-left:100px;"><%=brand%></h2><div class="row"><%while(rs.next()){ %>
