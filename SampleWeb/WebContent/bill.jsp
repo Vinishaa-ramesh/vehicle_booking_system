@@ -41,7 +41,7 @@ Katpadi,Vellore-632007<br><br>
 		String connectionUrl="jdbc:mysql://localhost:3306/project";
 		Connection connection=null;
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		connection=DriverManager.getConnection(connectionUrl,"root","Omkr786#");
+		connection=DriverManager.getConnection(connectionUrl,"root","password");
 	Statement st=connection.createStatement();
 	ResultSet rs1=st.executeQuery("select * from payment where email='"+email+"'");
 	while(rs1.next()){
