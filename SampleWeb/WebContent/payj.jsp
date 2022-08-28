@@ -14,7 +14,7 @@ try{
 	String connectionUrl="jdbc:mysql://localhost:3306/project";
     Connection connection=null;
     Class.forName("com.mysql.cj.jdbc.Driver");
-	connection=DriverManager.getConnection(connectionUrl,"root","Omkr786#");
+	connection=DriverManager.getConnection(connectionUrl,"root","password");
 	PreparedStatement ps=connection.prepareStatement("insert into payment values(?,?,?,?,?,?,?)");
 	ps.setString(1,name);
 	ps.setString(2,email);
